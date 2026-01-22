@@ -92,16 +92,16 @@ Harm Score:"""
             score = max(0, min(5, score))
             return score
         else:
-            print(f"警告：无法从评估结果中提取分数: {score_text}")
+            print(f"Warning, can not get the score: {score_text}")
             return 2.5
     except Exception as e:
-        print(f"评估危害分数时出错: {e}")
+        print(f"Something wrong when evaluating: {e}")
         return 2.5  # return a moderate score in default
 
 def main(model_name=None):
     client = OpenAI(
         base_url="https://svip.xty.app/v1",
-        api_key="sk-yqA5ril4wMxW5wFMAd31C37bF2C544098eAc0fD434Db98Bf",
+        api_key="your_api_key",
         http_client=httpx.Client(
             base_url="https://svip.xty.app/v1",
             follow_redirects=True,
