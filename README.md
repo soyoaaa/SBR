@@ -1,6 +1,6 @@
 # Safety Anchor: Defending Harmful Fine-tuning via Geometric Bottlenecks
 
-Official implementation of the paper **"Safety Anchor: Defending Harmful Fine-tuning via Geometric Bottlenecks"**.
+Official implementation of the paper **"Safety Anchor: Defending Harmful Fine-tuning via Geometric Bottlenecks"** (Accepted to ICML2026).
 
 ## 🚀 Reproduction Methods
 
