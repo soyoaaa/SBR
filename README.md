@@ -7,16 +7,14 @@ Official implementation of the paper **"Safety Anchor: Defending Harmful Fine-tu
 ### Method 1: Standard Reproduction (Based on this Repository)
 
 **1. Environment Setup**
-Please create a Python 3.10.16 environment and install the specific dependencies:
+
+We provide an environment file for exact reproducibility. You can set up the environment using the provided `unsloth_env.yml` file.
+
+**Using the reproducible environment file (Recommended)**
 
 ```bash
-conda create -n sbr python=3.10.16
+conda env create -f unsloth_env.yml
 conda activate sbr
-
-# Install dependencies (Ensure torch 2.7 compatible CUDA version)
-pip install torch==2.7.0+cu118
-pip install "unsloth==2025.6.2" "unsloth_zoo==2025.6.1"
-pip install transformers==4.51.3 trl==0.15.2 accelerate==1.6.0
 ```
 
 ### 2. Configuration
